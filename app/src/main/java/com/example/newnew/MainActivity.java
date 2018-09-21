@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                         url += "&destination=" + thisLocation.getLatitude() + "," + thisLocation.getLongitude();
                         url += "&key=" + "AIzaSyDjEK_vRWBhbFL4S_3CsXWO-TG_7bBkXwk";
                         //ปริ้นดูค่าใน logcat จะขึ้น http คลิกตามลิ้ง
-                        //Log.d("Debugging", url);
+                        Log.d("Debugging", url);
                         URLConnection connection = new URL(url).openConnection();
                         InputStream response = connection.getInputStream();
                         JSONParser parser = new JSONParser();
